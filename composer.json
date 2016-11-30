@@ -1,0 +1,13 @@
+{
+    "name": "ruogoo/log",
+    "authors": [{
+        "name": "HyanCat",
+        "email": "hyancat@live.cn"
+    }],
+    "require": {
+        "php": ">=5.6.0",
+        "monolog/monolog": "^1.22",
+        "illuminate/log": "^5.3",
+        "illuminate/auth": "^5.3"
+    }
+}
