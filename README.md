@@ -1,2 +1,2 @@
-# RGLog
+# log
 Log component for ruogoo.
