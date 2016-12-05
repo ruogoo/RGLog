@@ -10,6 +10,7 @@
 namespace Ruogoo\Log;
 
 use Ruogoo\Log\Operation\Record;
+use Monolog\Logger as Monolog;
 
 /**
  * 日志类
@@ -21,6 +22,13 @@ use Ruogoo\Log\Operation\Record;
 class Logger
 {
     protected $fetcher;
+
+    protected $monolog;
+
+    public function __construct(Monolog $monolog)
+    {
+        $this->monolog = $monolog;
+    }
 
     /**
      * 事件日志.
@@ -34,7 +42,7 @@ class Logger
      */
     public function event($event, $category = LogCategory::INFO, $message = '', array $extra = [])
     {
-        $record = new Record($category, $event, $message, $extra);
+        $record = new Record($category, $event, $message, $extra, $this->monolog);
         $record->save();
 
         return $this;

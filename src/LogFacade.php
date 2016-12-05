@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * Class LogFacade
  * @see LogServiceProvider
- * @package Ruogu\Packages\Log
+ * @package Ruogoo\Log
  */
 class LogFacade extends Facade
 {

@@ -9,7 +9,6 @@
 
 namespace Ruogoo\Log\Operation;
 
-use Illuminate\Support\Facades\Log;
 use Ruogoo\Log\Processor\CategoryProcessor;
 use Ruogoo\Log\Processor\EventProcessor;
 use Ruogoo\Log\Processor\NormalProcessor;
@@ -29,9 +28,9 @@ class Record
     private $_extra;
     protected $monolog;
 
-    public function __construct($category, $event, $message, array $extra = [])
+    public function __construct($category, $event, $message, array $extra = [], Monolog $monolog)
     {
-        $this->monolog = Log::getMonolog();
+        $this->monolog = $monolog;
 
         $this->_category = $category;
         $this->_event    = $event;

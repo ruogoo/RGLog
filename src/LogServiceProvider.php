@@ -15,8 +15,8 @@ class LogServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton('ruogu.log', function () {
-            return new Logger();
+        $this->app->singleton('ruogu.log', function ($app) {
+            return new Logger($app['log']);
         });
     }
 
