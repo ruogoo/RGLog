@@ -7,7 +7,7 @@
  * Copyright (C) HyanCat. All rights reserved.
  */
 
-namespace Ruogu\Packages\Log\Processor;
+namespace Ruogoo\Log\Processor;
 
 class EventProcessor
 {

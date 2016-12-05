@@ -7,13 +7,13 @@
  * Copyright (C) HyanCat. All rights reserved.
  */
 
-namespace Ruogu\Packages\Log\Operation;
+namespace Ruogoo\Log\Operation;
 
 use Illuminate\Support\Facades\Log;
-use Ruogu\Packages\Log\Processor\CategoryProcessor;
-use Ruogu\Packages\Log\Processor\EventProcessor;
-use Ruogu\Packages\Log\Processor\NormalProcessor;
-use Ruogu\Packages\Log\Processor\TimeProcessor;
+use Ruogoo\Log\Processor\CategoryProcessor;
+use Ruogoo\Log\Processor\EventProcessor;
+use Ruogoo\Log\Processor\NormalProcessor;
+use Ruogoo\Log\Processor\TimeProcessor;
 use Monolog\Logger as Monolog;
 
 /**

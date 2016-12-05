@@ -7,9 +7,9 @@
  * Copyright (C) HyanCat. All rights reserved.
  */
 
-namespace Ruogu\Packages\Log;
+namespace Ruogoo\Log;
 
-use Ruogu\Packages\Log\Operation\Record;
+use Ruogoo\Log\Operation\Record;
 
 /**
  * 日志类

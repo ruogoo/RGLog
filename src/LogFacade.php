@@ -7,7 +7,7 @@
  * Copyright (C) HyanCat. All rights reserved.
  */
 
-namespace Ruogu\Packages\Log;
+namespace Ruogoo\Log;
 
 use Illuminate\Support\Facades\Facade;
 

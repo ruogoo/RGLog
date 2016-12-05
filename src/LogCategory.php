@@ -7,7 +7,7 @@
  * Copyright (C) HyanCat. All rights reserved.
  */
 
-namespace Ruogu\Packages\Log;
+namespace Ruogoo\Log;
 
 /**
  * 定义的日志类别
